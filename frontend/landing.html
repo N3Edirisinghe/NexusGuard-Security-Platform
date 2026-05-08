@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusGuard | Enterprise WAF</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0 2rem;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-title {
+            font-size: 5.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .hero-bg-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .enterprise-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 99px;
+            color: var(--accent-purple);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            NEXUSGUARD
+        </div>
+        <div style="display: flex; gap: 1rem;">
+            <a href="/dashboard" class="btn btn-glow" style="padding: 0.5rem 1.5rem;">Launch Console</a>
+            <a href="/docs" class="btn btn-solid" style="padding: 0.5rem 1.5rem;">API Docs</a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <div class="enterprise-badge">
+                <span>✦</span> ENTERPRISE GRADE SECURITY
+            </div>
+            <h1 class="hero-title">Zero Trust.<br><span class="text-gradient">Absolute Control.</span></h1>
+            <p class="hero-subtitle">The next generation Web Application Firewall engineered specifically for FastAPI. Advanced L7 threat mitigation, atomic rate limiting, and real-time observability at edge performance.</p>
+            
+            <div class="cta-container">
+                <a href="/dashboard" class="btn btn-solid" style="padding: 1rem 3rem; font-size: 1.1rem;">Access SOC Dashboard</a>
+                <a href="#features" class="btn btn-glow" style="padding: 1rem 3rem; font-size: 1.1rem;">Explore Architecture</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" style="background: rgba(0,0,0,0.5); border-top: 1px solid var(--card-border); position: relative; z-index: 10;">
+        <div class="feature-grid">
+            <div class="glass-panel feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Intelligent Inspection</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">Deep packet inspection preventing SQLi, XSS, and Traversal attacks before routing.</p>
+            </div>
+            <div class="glass-panel feature-card" style="transform: translateY(-20px); border-color: rgba(34, 211, 238, 0.4); box-shadow: 0 0 30px rgba(34, 211, 238, 0.1);">
+                <div class="feature-icon">⚡</div>
+                <h3>Atomic Throttling</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">Redis-backed sliding window algorithms ensuring sub-millisecond rate limit enforcement.</p>
+            </div>
+            <div class="glass-panel feature-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Real-time Observability</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.6;">Comprehensive logging and terminal interfaces for immediate threat detection and response.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 3rem; text-align: center; border-top: 1px solid var(--card-border); color: var(--text-secondary); font-size: 0.875rem; background: #000;">
+        &copy; 2026 NexusGuard Systems. Defense in Depth Architecture.
+    </footer>
+</body>
+</html>

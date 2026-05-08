@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+redis
+pydantic[email]
+pydantic-settings
+sqlalchemy
+passlib[argon2]
+python-jose[cryptography]
+python-multipart
+httpx
+slowapi
