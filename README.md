@@ -82,5 +82,5 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ---
 <div align="center">
-  <i>Developed with ❤️ by <a href="https://github.com/N3Edirisinghe">N3Edirisinghe</a></i>
+  <i>Developed  by <a href="https://github.com/N3Edirisinghe">N3Edirisinghe</a></i>
 </div>
