@@ -29,7 +29,7 @@ This project demonstrates advanced cybersecurity principles, secure API developm
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Technology Stacks
 
 | Category | Technologies |
 | --- | --- |
